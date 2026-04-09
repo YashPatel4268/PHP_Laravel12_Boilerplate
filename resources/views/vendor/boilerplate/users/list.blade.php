@@ -10,12 +10,30 @@
     <div class="row">
         <div class="col-12 mbl">
             <span class="float-right pb-3">
+<<<<<<< HEAD
                 <a href="{{ route("boilerplate.users.create") }}" class="btn btn-primary">
                     @lang('boilerplate::users.create.title')
                 </a>
             </span>
         </div>
     </div>
+=======
+                
+                <!-- ✅ Create User Button -->
+                <a href="{{ route("boilerplate.users.create") }}" class="btn btn-primary">
+                    @lang('boilerplate::users.create.title')
+                </a>
+
+                <!-- ✅ Export Users Button (NEW) -->
+                <a href="{{ route('boilerplate.users.export') }}" class="btn btn-success ml-2">
+                    Export Users
+                </a>
+
+            </span>
+        </div>
+    </div>
+
+>>>>>>> main
     @component('boilerplate::card')
         @component('boilerplate::datatable', ['name' => 'users']) @endcomponent
     @endcomponent
@@ -23,4 +41,8 @@
 
 @push('css')
     <style>.img-circle { border:1px solid #CCC }</style>
+<<<<<<< HEAD
 @endpush
+=======
+@endpush
+>>>>>>> main
